@@ -1,0 +1,42 @@
+Airflow notes:
+
+===============================
+
+
+https://stackoverflow.com/questions/32378494/how-to-run-airflow-on-windows
+
+
+
+docker one heled me -----------
+
+8
+
+I'm runnig airflow on windows 10 using docker.
+
+1) First you need to install docker on your windows .
+
+2) Run command docker version from command prompt if you get output means docker installed succesfuuly
+
+2) Then you need to pull airflow image using command docker pull puckel/docker-airflow
+
+3) Next step is to run image docker run -d -p 8080:8080 puckel/docker-airflow webserver
+
+4) This will run airflow and you can access webui at localhost:8080
+
+5) To copy dags use this command docker cp sample_dag.py containerName:/usr/local/airflow/dags
+
+To access airflow utility you need to access the bash shell of container . you can do so using docker exec -it containerName bash . Once you inside bash shell you can run command line utilities ex **airflow list_dags**       ie  airflow list_dags
+
+Hope it helps
+
+
+===============================
+
+https://towardsdatascience.com/getting-started-with-airflow-using-docker-cd8b44dbff98 
+
+https://medium.com/@itunpredictable/apache-airflow-on-docker-for-complete-beginners-cf76cf7b2c9a
+
+https://blog.knoldus.com/running-apache-airflow-dag-with-docker/ -------------- detemining each keyword
+
+
+https://www.youtube.com/watch?v=2nhdhIYueIE  ---- good video

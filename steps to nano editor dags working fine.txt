@@ -1,0 +1,47 @@
+docker run -d -p 8080:8080 puckel/docker-airflow webserver
+
+docker ps 
+
+docker exec -it --user  root <container_id > /bin/bash 
+
+ls
+
+mkdir dags
+ 
+ 
+ cd dags
+ 
+
+ 
+ apt update
+ 
+  apt install nano
+  
+   apt install apt-utils
+   apt update
+   
+   apt upgrade apt-utils
+   
+   
+    apt install nano
+	
+	
+	nano myairflow.py
+	
+	copy paste
+	
+	ctrl+o    for save
+	ctrl+x    for exit
+	
+	airflow scheduler
+	
+	
+	==================================
+	
+	
+	
+	
+	
+	
+	
+	
