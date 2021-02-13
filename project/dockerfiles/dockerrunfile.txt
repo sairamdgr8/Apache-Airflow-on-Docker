@@ -1,0 +1,1 @@
+this folder contains main docker file to run the image
